@@ -27,29 +27,28 @@
 
 
 document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+      e.preventDefault();
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+      const form = e.target;
+      const formData = new FormData(form);
 
-  fetch("http://localhost:5000/submit", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: `name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}`
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      alert("Thank you! Your message has been sent.");
-      document.getElementById("contactForm").reset();
-    })
-    .catch((err) => {
-      alert("Something went wrong.");
-      console.error(err);
+      fetch("http://localhost:5000/submit", {
+        method: "POST",
+        body: new URLSearchParams(formData),
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        }
+      })
+      .then(res => res.json())
+      .then(data => {
+        alert("Form submitted successfully!");
+        form.reset();
+      })
+      .catch(err => {
+        console.error("Error:", err);
+        alert("Submission failed!");
+      });
     });
-});
-
-
 
 
 
