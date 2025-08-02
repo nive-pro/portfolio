@@ -24,7 +24,7 @@
   alert("Thank you! Your message has been sent.");
   this.reset();
 });*/
-
+/*
 
 document.getElementById("contactForm").addEventListener("submit", function (e) {
       e.preventDefault();
@@ -48,7 +48,8 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
         console.error("Error:", err);
         alert("Submission failed!");
       });
-    });
+    });--->*/
+
 
 
 
