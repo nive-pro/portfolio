@@ -3,9 +3,9 @@ from urllib.parse import parse_qs
 import json
 from supabase import create_client, Client
 
-# Supabase credentials (replace with your actual info)
+# Supabase credentials (replace with your actual info)"
 SUPABASE_URL = 'https://flpejsvwzielijtbtvde.supabase.co'
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZscGVqc3Z3emllbGlqdGJ0dmRlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1Mzk0NzEyMywiZXhwIjoyMDY5NTIzMTIzfQ.WpXpf2Opj5u2VNuAawq_tbnRxCdvL0_YGT3gHyW1Ab0"
+SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZscGVqc3Z3emllbGlqdGJ0dmRlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM5NDcxMjMsImV4cCI6MjA2OTUyMzEyM30.MokJfOx6FVCuDsU_9GIQzt4ce70wuUrV59GEuVLmySs'
 
 # Create Supabase client
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
@@ -48,4 +48,5 @@ if __name__ == "__main__":
     print("Server running at http://localhost:5000")
     server = HTTPServer(("localhost", 5000), RequestHandler)
     server.serve_forever()
+
 
