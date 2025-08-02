@@ -415,7 +415,7 @@ background-color:#c4aeff; /* Green */
 
 .button:hover {
     
-  border-color: #00044b;
+ background-color: #b29cee;
   box-shadow: #b29cee;
   color: #00044b;
 }
@@ -437,8 +437,12 @@ background-color:#c4aeff; /* Green */
         align-items: center;
         height: 350px;
         width: 350px;
-        overflow: hidden;
+        
+        padding: 1%;
 
+    }
+    p{
+        font-size: 47px;
     }
 
 
@@ -453,7 +457,6 @@ background-color:#c4aeff; /* Green */
     align-items: center;
     justify-content: space-around;
     gap :5rem;
-    background-color:#ded3fd;
     padding-left: 1%;
     padding-right: 0%;
     padding-top: 40px;
@@ -465,8 +468,11 @@ background-color:#c4aeff; /* Green */
 
 .card2{
 
-    padding-left: 18%;
+    padding-left: 20%;
     padding-right: 15%;
+    background-color: #e9e5f7;
+    padding-top: 5%;
+    padding-bottom: 5%;
     
 }
 
@@ -522,27 +528,48 @@ padding-top: 8px;
     padding-left: 20%;
     padding-right: 20%;
     font-size: 20px;
+     
+   
 }
+
+@media(max-width:600px) {
+    .skill-item
+    
+    {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+
+
 /*-----about---*/
 .about{
     font-size: 20px;
     text-align: center;
     text-wrap: wrap;
-    padding-top: 50px;
+    padding-top: 5%;
+    padding-bottom: 9%;
     display: flex;
-    justify-content: center;
-    width: 90%;
-    height: auto;
     
+    width: 80%;
+    height:60%;
+    margin-left: 18.5%;
+    padding-right: 8%;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 9px;
 
 }
-.anout img{
-    padding-left: 10%;
-    padding-bottom: 50px;
-    width: 0px;
-    height: 0px;
-    padding-top: 0px;
-    
+.girl img {
+    padding-left: 1%;
+    padding-bottom: 0px;
+     margin-right: 0%;
+     position: absolute;
+    margin-left: 4.5%;
+    overflow: hidden;
 
     
 }
@@ -553,23 +580,78 @@ padding-top: 8px;
 }
 .para1 p{
     font-size: 16px;
-    justify-content: left;
-    text-align: left;
+    /*justify-content: left;*/
+    text-align:left;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
     text-size-adjust: 0;
     line-height: 30px;
 
     
+    padding-top: 5%;
+    padding-left: 6%;
+    padding-right: 4%;
+    padding-bottom: 15%;
+   overflow:hidden;
+     
+
+
+}
+.para1{
+   box-shadow: 0px 0px 8px rgba(91, 91, 92, 0.938);
+     border-radius: 15px;
+     background-blend-mode: cover;
     
-    padding-top: 10%;
-    padding-left: 3%;
+     width: 80%;
+     
+}
+
+.about1{
+    margin-left: 5%;
+}
+
+@media(max-width:600px) {
+    .girl img{
+         padding-left: 0%;
+    padding-bottom: 0px;
+     margin-right: 5%;
+     position: none;
+    margin-left: 0%;
+    overflow: hidden;
     padding-right: 5%;
+    height: 300px;
+    width: 175px;
+    padding-top: 200px;
+
+    }
+    
+    .about{
+    position: bolck;
+    margin-left: 0%;
+    overflow: hidden;
+padding-left: 29%;
+
+
+}
+.page2{
+    overflow: hidden;
+    margin-right: 5%;
+    
+}
+.para1{
+    padding-left: 4%;
+     box-shadow: 0px 0px 8px rgba(149, 149, 151, 0.938);
+     border-radius: 15px;
+     background-blend-mode: cover;
+    padding-right: 3%;
+}
+
 
 
 }
 
 
+/*---------------*/
 .card1{
 
     
@@ -577,19 +659,30 @@ padding-top: 8px;
     font-size: 24px;
     font-weight: bold;
     color: #00044b;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 30px;
     text-align: center;
 
     
 }
+@media(max-width:600) {
+    .about{
+        align-items: center;
+    }
+    .para1 p{
+        text-wrap: wrap;
+        text-align: left;
+    }
+
+}
+
 
 /*-------accord-----*/
 
 .accordion {
   background-color:#c4aeff;
   font-weight: 30%;
-  text-decoration: #fff;
+  
   cursor: pointer;
   padding-left: 0px;
   padding-right: 5px;
@@ -598,8 +691,8 @@ padding-top: 8px;
   width: 70%;
   align-content: center;
   border-radius: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 5px;
 
   text-emphasis-color:#fff;
@@ -621,13 +714,13 @@ padding-top: 8px;
 .panel {
   padding: 0 0px;
   margin-top: 0px;
-  padding-top: 0px;
+  padding-top: 5px;
 
   margin-left: 15%;
   width: 70%;
   align-content: center;
   border-radius: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 5px;
   margin-bottom: 40px;
 
   border: none;
@@ -637,15 +730,15 @@ padding-top: 8px;
   transition: 0.4s;
   align-items: center;
   
-
+ background-color:#c4aeff;
   
   display: none;
-  background-color: rgb(161, 129, 190);
+ 
   
 }
 
 .text{
-    font-family: "poppins";
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     text-align: center;
     text-indent: 10px;
@@ -660,33 +753,129 @@ padding-top: 8px;
 
 }
 .acc{
+     padding-top: 5%;
+        padding-bottom: 5%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+@media(max-width:600px) {
+    .acc{
+        align-items: center;
+        padding-right: 0;
+        padding-top: 5%;
+        padding-bottom: 5%;
+         justify-content: space-between;
 
-margin-bottom: 20px;
+    }
+    .accordion{
+        width: 80%;
+        align-items: center;
+        padding: auto;
+        margin-left: 42px;
+        justify-content: space-around;
+
+    }
+    .text{
+    
+        width: 90%;
+        align-items: center;
+        padding: auto;
+         margin-right: 10%;
+         background-color:#c4aeff; 
+         text-align: center;
+    }
+    .panel {
+        background-color:#c4aeff;
+        align-items: left;
+        padding: 5%;
+        margin-right: 10%;
+         margin-left: 9%;
+        
+    }
 }
 
 /*---bolg----*/
 .newpic img{
-    margin-left: 40%;
-    padding: auto;
+    
+    padding-left: 40%;
+    position: absolute;
+    
+
+
 }
 .newtext p{
      font-size: 16px;
-    justify-content: left;
+    
     text-align: center;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
-    text-size-adjust: 0;
+    
     line-height: 30px;
 
     
-    
     padding-top: 0%;
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-left: 0%;
+    padding-right: 0%;
 
 }
 
+.newtext{
+     box-shadow: 0px 0px 8px rgba(91, 91, 92, 0.938);
+     border-radius: 15px;
+     background-blend-mode: cover;
+    
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 5%;
+    padding: 3%;
+    margin-top: 19%;
+    padding-top: 5%;
+    overflow: hidden;
+    width: 80%;
+    
+}
 
+@media(max-width:600px) 
+{
+  .blog{
+
+    align-items: center;
+
+    
+  } 
+
+  .newpic img{
+
+
+    overflow: hidden;
+    margin-top: 1%;
+    position: block;
+    padding-left: 20%;
+    
+
+
+  }
+
+  .newtext{
+     box-shadow: 0px 0px 8px rgba(91, 91, 92, 0.938);
+     border-radius: 15px;
+     background-blend-mode: cover;
+    text-align: justify;
+    
+    margin-top:54%;
+    padding-top: 10%;
+    overflow: hidden;
+    
+    
+
+  }
+.newtext p{
+    text-align: justify;
+    padding: 2%;
+}    
+
+  
+}
 
 /*footer--*/
 
@@ -720,13 +909,6 @@ margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
-
-.info{
-    
-    width: auto;
-    
-}
-    
 h2{
     text-align: center;
 }
@@ -775,29 +957,6 @@ h3{
         
     }
 }
-@media(max-width:600px) {
-    
-
-    .container {
-        
-        text-align: center;
-         overflow: hidden;
-        
-        
-    }
-    .cont1{
-
-flex-wrap: ;
-width: auto;
-
-    }
-    .form{
-        padding: 0px ;
-        margin: 0px;
-
-    }
-
-}
     
 
 
@@ -805,11 +964,6 @@ width: auto;
 /*--------------cont-----------------*/
 
 .container {
-
-
-  background-blend-mode: cover;
-  border-radius: 10px;
-  box-shadow: 0px 0px 05px rebeccapurple;
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
   
@@ -843,8 +997,11 @@ width: auto;
     padding-left: 0px;
     align-content: center;
     padding-top: 0px;
-    width:auto
-    
+    width:auto;
+    box-shadow: 0px 0px 8px rgba(179, 177, 180, 0.938);
+     border-radius: 15px;
+     background-blend-mode: cover;
+     width: 40%;
 }
 
 
@@ -929,6 +1086,36 @@ img{
 background:linear-gradient(#a09c9c #585252) ;
     
 }
+
+@media(max-width:600px) {
+    
+
+    .container {
+        
+        text-align: center;
+         overflow: hidden;
+        
+        
+    }
+    .cont1{
+
+flex-wrap:wrap;
+width: auto;
+
+    }
+    .form{
+        width: 90%;
+        padding: 0px;
+        align-items: center;
+
+    }
+    .contact-form1 button{
+        width: 70%;
+    }
+
+}
+
+
 /*------end-----*/
 .end{
     background-color: #b29cee;
