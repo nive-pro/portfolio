@@ -320,7 +320,7 @@ nav{
     width: 450px;
     object-fit: cover;
     vertical-align: middle;
-    overflow: hidden;
+    
     
 }
 
@@ -448,7 +448,7 @@ background-color:#c4aeff; /* Green */
 
 }
 
----------------------------------
+/*---------------------------------*/
 .section3{
 
     padding: 0 0px;
@@ -536,10 +536,19 @@ padding-top: 8px;
     .skill-item
     
     {
-        align-items: center;
-        flex-wrap: wrap;
+        
+      margin-left: auto;
+      align-items: center;
+
     }
+    .cont2{
+       
+         margin-left: auto;
+      align-items: center;
+
     
+        
+    }
 }
 
 
@@ -629,7 +638,7 @@ padding-top: 8px;
     position: bolck;
     margin-left: 0%;
     overflow: hidden;
-padding-left: 29%;
+padding-left: 30%;
 
 
 }
@@ -644,6 +653,7 @@ padding-left: 29%;
      border-radius: 15px;
      background-blend-mode: cover;
     padding-right: 3%;
+    text-align: justify;
 }
 
 
@@ -837,6 +847,11 @@ padding-left: 29%;
 
 @media(max-width:600px) 
 {
+   .top{
+    padding-top: 3%;
+    padding-bottom: 3%;
+   }
+
   .blog{
 
     align-items: center;
@@ -850,7 +865,7 @@ padding-left: 29%;
     overflow: hidden;
     margin-top: 1%;
     position: block;
-    padding-left: 20%;
+    padding-left: 15%;
     
 
 
@@ -862,8 +877,8 @@ padding-left: 29%;
      background-blend-mode: cover;
     text-align: justify;
     
-    margin-top:54%;
-    padding-top: 10%;
+    margin-top:60%;
+    padding-top: 14%;
     overflow: hidden;
     
     
