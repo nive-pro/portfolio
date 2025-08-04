@@ -193,10 +193,12 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0px 0px 0px rgb(199, 74, 193);
     font-size: 25px;
-    
-
 padding-left: 5%;
 }
+.logo a{
+   text-decoration: none;
+    color:#00044b;
+} 
 nav ul{
     display: flex;
     gap:35px;
@@ -556,7 +558,7 @@ padding-top: 8px;
       align-items: center;  
       margin-left: auto;
       align-items: center;
-      margin-right: 20%;
+      margin-right: 18%;
       padding-left: 5%;
 
     }
@@ -664,13 +666,13 @@ padding-top: 8px;
     position: bolck;
     margin-left: 0%;
     overflow: hidden;
-padding-left: 30%;
+padding-left: 31%;
 
 
 }
 .page2{
     overflow: hidden;
-    margin-right: 4%;
+    margin-right: 3%;
     
 }
 .para1{
@@ -903,8 +905,8 @@ padding-left: 30%;
      background-blend-mode: cover;
     text-align: justify;
     
-    margin-top:60%;
-    padding-top: 15%;
+    margin-top:61%;
+    padding-top: 16%;
     overflow: hidden;
     
     

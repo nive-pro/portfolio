@@ -15,7 +15,7 @@
   
  <nav>
         <div class="logo">
-    <h1>Nivetha</h1>
+<h1><a href="home.html">Nivetha</a></h1>
         </div>
 
 
@@ -51,67 +51,15 @@
       <form class="contact-form1" id="contactForm">
       <input type="text" id="name" placeholder="Your Name" required />
       <input type="email" id="email" placeholder="Your Email" required />
-       <textarea  id="message" placeholder="Your Message" required></textarea>
+       <textarea placeholder="Your Message" required></textarea>
       <button type="submit">submit</button>
       
-      </form>
-       <div class="shadow"></div>
+    
+      
     </div>
 
     </div>
   </div>
-
-
-
-    <!-- Supabase CDN Script -->
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-
-    <script type="module">
-  import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
-</script>
-
-
-  <!-- Your JavaScript Code -->
-    
-  <script>
-
-      import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
-
-
-      const SUPABASE_URL = "https://flpejsvwzielijtbtvde.supabase.co";
-       const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZscGVqc3Z3emllbGlqdGJ0dmRlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM5NDcxMjMsImV4cCI6MjA2OTUyMzEyM30.MokJfOx6FVCuDsU_9GIQzt4ce70wuUrV59GEuVLmySs";
-      
-    //  1. Create Supabase Client
-
-    const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-
-      const supabase = createClient(
-  'https://flpejsvwzielijtbtvde.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZscGVqc3Z3emllbGlqdGJ0dmRlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM5NDcxMjMsImV4cCI6MjA2OTUyMzEyM30.MokJfOx6FVCuDsU_9GIQzt4ce70wuUrV59GEuVLmySs')
-
-
-const form = document.getElementById("contactForm");
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const name = form.name.value;
-  const email = form.email.value;
-  const message = form.message.value;
-
-  const { data, error } = await supabase
-    .from("contacts")
-    .insert([{ name, email, message }]);
-
-  if (error) {
-    console.error("Insert error:", error.message);
-    alert("Failed to submit. Check console.");
-  } else {
-    alert("Form submitted successfully!");
-    form.reset();
-  }
-});
-  </script>
 
 
     
@@ -124,7 +72,7 @@ form.addEventListener("submit", async (e) => {
 
     <div class="info">
 
-    <b>Location:</b>Pondicherry
+    <b>Location:</b>Pondycherry
     <b>| Phone:</b> +91 93458 32800
     </div>
 
@@ -165,12 +113,10 @@ form.addEventListener("submit", async (e) => {
 
 </div>
 </div>
-
-          
 <!------------------->
 
 <div class="end">
- &copy; Developed by Nivetha
+ &copy;  Developed by Nivetha
  </div>
 
 
@@ -179,8 +125,3 @@ form.addEventListener("submit", async (e) => {
     
 </body>
 </html>
-
-
-
-
-
