@@ -320,6 +320,7 @@ nav{
     width: 450px;
     object-fit: cover;
     vertical-align: middle;
+    padding-top: 4%;
     
     
 }
@@ -437,12 +438,16 @@ background-color:#c4aeff; /* Green */
         align-items: center;
         height: 350px;
         width: 350px;
-        
-        padding: 1%;
+        margin-top: 1%;
+        margin-right: 3%;
 
     }
     p{
         font-size: 47px;
+    }
+    .title{
+        margin-top: 0%;
+        padding-top: 20%;
     }
 
 
@@ -457,18 +462,30 @@ background-color:#c4aeff; /* Green */
     align-items: center;
     justify-content: space-around;
     gap :5rem;
-    padding-left: 1%;
+    padding-left: 0%;
     padding-right: 0%;
     padding-top: 40px;
     padding-bottom: 40px;
     overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.card1{
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00044b;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-right: 10%;
+
+}
 
 
 .card2{
 
-    padding-left: 20%;
+    padding-left: 21%;
     padding-right: 15%;
     background-color: #e9e5f7;
     padding-top: 5%;
@@ -487,7 +504,7 @@ background-color:#e4bedd; /* Green */
   
 
   
-  padding: 12px 20px;
+  padding: 15px 20px 20px 15px;
   padding-bottom: 10px;
   text-align: center;
   text-decoration: none;
@@ -536,17 +553,26 @@ padding-top: 8px;
     .skill-item
     
     {
-        
+      align-items: center;  
       margin-left: auto;
       align-items: center;
+      margin-right: 20%;
+      padding-left: 5%;
 
     }
     .cont2{
        
          margin-left: auto;
       align-items: center;
+      
+      
 
     
+        
+    }
+    .card1{
+        text-align: center;
+        padding-right:5%
         
     }
 }
@@ -629,7 +655,7 @@ padding-top: 8px;
     overflow: hidden;
     padding-right: 5%;
     height: 300px;
-    width: 175px;
+    width: 170px;
     padding-top: 200px;
 
     }
@@ -644,7 +670,7 @@ padding-left: 30%;
 }
 .page2{
     overflow: hidden;
-    margin-right: 5%;
+    margin-right: 4%;
     
 }
 .para1{
@@ -662,7 +688,7 @@ padding-left: 30%;
 
 
 /*---------------*/
-.card1{
+.head{
 
     
     font-family: Arial, Helvetica, sans-serif;
@@ -868,7 +894,7 @@ padding-left: 30%;
     padding-left: 15%;
     
 
-
+ 
   }
 
   .newtext{
@@ -878,7 +904,7 @@ padding-left: 30%;
     text-align: justify;
     
     margin-top:60%;
-    padding-top: 14%;
+    padding-top: 15%;
     overflow: hidden;
     
     
