@@ -62,7 +62,7 @@
   </div>
 
 
- <form id="contact-form" action="https://formspree.io/f/xldlpnvo" method="POST">
+  <form id="contact-form">
     <label>Name:</label>
     <input type="text" name="name" required>
 
@@ -83,25 +83,31 @@
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
 
-      const formData = new FormData(form);
+      const formData = {
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value
+      };
 
       try {
-        const response = await fetch(form.action, {
+        const response = await fetch('https://formspree.io/f/xldlpnvo', {
           method: 'POST',
-          body: formData,
           headers: {
+            'Content-Type': 'application/json',
             'Accept': 'application/json'
-          }
+          },
+          body: JSON.stringify(formData)
         });
 
         if (response.ok) {
           form.reset();
           successMessage.style.display = 'block';
         } else {
-          alert("Something went wrong. Please try again.");
+          const data = await response.json();
+          alert("Error: " + (data.message || "Form submission failed."));
         }
       } catch (error) {
-        alert("Error: " + error.message);
+        alert("Network Error: " + error.message);
       }
     });
   </script>
@@ -170,6 +176,7 @@
     
 </body>
 </html>
+
 
 
 
