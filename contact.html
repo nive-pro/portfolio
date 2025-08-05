@@ -9,11 +9,138 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-  </head>
-    <style>
+ <style>   
+     
+    form{
+    
+    align-items: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    align-content: center;
+    padding-top: 0px;
+    width:auto;
+    box-shadow: 0px 0px 8px rgba(179, 177, 180, 0.938);
+     border-radius: 15px;
+     background-blend-mode: cover;
+     width: 40%;
+}
 
+
+.contact-form1  {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #00044b;
+  
+  
+  
+}
+
+.contact-form1 input,
+.contact-form1 textarea {
+  width: 60%;
+  padding: 12px;
+  margin:10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+  font-family: "poppins";
+  
+  
+}
+
+.contact-form1 textarea {
+  width: 60%;
+  height: 60px;
+  padding: 12px;
+  margin:10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  
+  
+}
+
+
+
+.contact-form1 button {
+  width: 60%;
+  padding: 12px;
+  background-color:#bfaaf7;
+  color: #00044b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 0px;
+  transition: 0.3s;
+  
+
+}
+
+
+.contact-form1 button:hover {
+  background-color: #b29cee;
+}
+
+.cont1{
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+
+.contact{
+    width: auto;
+    padding: auto;
+}
+
+img{
+     filter: 0 4px 8px 0 rgba(104, 102, 102, 0.2);;
+background:linear-gradient(#a09c9c #585252) ;
+    
+}
+
+@media(max-width:600px) {
+    
+
+    .container {
         
-    </style>
+        text-align: center;
+         overflow: hidden;
+        
+        
+    }
+    .cont1{
+
+flex-wrap:wrap;
+width: auto;
+
+    }
+    .form{
+        width: 90%;
+        padding: 0px;
+        align-items: center;
+
+    }
+    .contact-form1 button{
+        width: 70%;
+    }
+
+}
+</style>
+
+<!-----------form---->
+    
+  </head>
+    
 <body>
 
   
@@ -52,7 +179,7 @@
 
     <div class="form">
       
-    <form  id="contact-form">
+    <form class="contact-form1" id="contact-form">
   <input type="text" name="name" id="name" placeholder="Name" required />
   <input type="email" name="emailid" id="email" placeholder="Email" required />
   <textarea name="message" id="message" placeholder="Your Message" required></textarea>
@@ -183,6 +310,7 @@
     
 </body>
 </html>
+
 
 
 
