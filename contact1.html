@@ -37,7 +37,7 @@
 
 
   
-  <div class="container">
+<!---<div class="container">
     
     <h2 class="cont2">Contact me</h2>
 
@@ -60,11 +60,11 @@
 
     </div>
   </div>
-
+-->
 <!---------------form script----->
 
 
- 
+ <!---
 
   <script>
     const SUPABASE_URL = 'https://flpejsvwzielijtbtvde.supabase.co';
@@ -85,9 +85,49 @@
         console.log(data);
       }
     }
-  </script>
+  </script>--->
 
+<form id="contactForm">
+  <input type="text" name="name" id="name" placeholder="Name" required />
+  <input type="email" name="emailid" id="emailid" placeholder="Email" required />
+  <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
 
+<!-- For success alert -->
+<p id="successMessage" style="color: green; display: none;">Message sent successfully!</p>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = "https://flpejsvwzielijtbtvde.supabase.co";
+  const SUPABASE_KEY = "sb_publishable_jBM8FEAJPplicBS3J9phPA_O0SPyJQ0"; // ✅ use publishable key here
+
+  const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+  const form = document.getElementById("contactForm");
+  const successMessage = document.getElementById("successMessage");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const emailid = document.getElementById("emailid").value;
+    const message = document.getElementById("message").value;
+
+    const { data, error } = await supabase
+      .from("contact") // your table name
+      .insert([{ name, emailid, message }]);
+
+    if (error) {
+      console.error("Error:", error.message);
+      alert("Something went wrong. Please try again.");
+    } else {
+      console.log("Success:", data);
+      successMessage.style.display = "block";
+      form.reset(); // clear form
+    }
+  });
+</script>
 
 
 
@@ -161,6 +201,7 @@
     
 </body>
 </html>
+
 
 
 
