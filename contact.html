@@ -184,7 +184,6 @@ width: auto;
   <input type="email" name="emailid" id="email" placeholder="Email" required />
   <textarea name="message" id="message" placeholder="Your Message" required></textarea>
   <button type="submit">Send</button>
-   <h6 id="success-message">Thanks! Your message has been sent.</h6>
         
 </form> 
     </div>
@@ -233,7 +232,7 @@ width: auto;
 
         if (response.ok) {
           form.reset();
-          success-Message.style.display = 'block';
+          alert("Thank you! Your message has been sent successfully.") ;
         } else {
           const data = await response.json();
           alert("Error: " + (data.message || "Form submission failed."));
@@ -312,6 +311,7 @@ width: auto;
     
 </body>
 </html>
+
 
 
 
