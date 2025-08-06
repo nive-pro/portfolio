@@ -704,7 +704,7 @@ padding-left: 30%;
 }
 .para1{
     padding-left: 4%;
-     box-shadow: 0px 0px 8px rgba(149, 149, 151, 0.938);
+    /* box-shadow: 0px 0px 0px rgba(149, 149, 151, 0.938);*/
      border-radius: 15px;
      background-blend-mode: cover;
     padding-right: 3%;
@@ -730,7 +730,7 @@ padding-left: 30%;
 
     
 }
-@media(max-width:600) {
+@media(max-width:600px) {
     .about{
         align-items: center;
     }
@@ -1197,3 +1197,4 @@ width: auto;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
