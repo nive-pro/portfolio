@@ -173,6 +173,7 @@ html,body{
 
 }
 
+
 nav{
     padding: 10px 30px;
     display: flex;
@@ -254,9 +255,51 @@ nav{
     
 
 }
+ 
 
+@media screen and (max-width:600px) {
+   html,body{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin: auto;
+    overflow-x: hidden;
+   }
 
-@media (max-width:600px){
+ 
+}
+ 
+ 
+ @media screen and(max-width:767px){
+     html,body{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin: auto;
+    overflow-x: hidden;
+   }
+ }
+
+  @media screen and(max-width:1024px){
+     html,body{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin: auto;
+    overflow-x: hidden;
+   }
+ }
+
+ @media screen and (max-width:600px) {
+   html,body{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin: auto;
+    overflow-x: hidden;
+   }
+
+ 
     nav ul{
         position: absolute;
         top: 60px;
@@ -279,7 +322,7 @@ nav{
     .menu-icon{
         display: block;
     }
-    #menulist{
+    .menulist{
         transition: all 0.5s;
         
     }
@@ -303,7 +346,7 @@ nav{
     
     background-repeat: no-repeat;
     overflow: hidden;
-    display: inline;
+    
     
     
 }
@@ -322,7 +365,8 @@ nav{
     width: 450px;
     object-fit: cover;
     vertical-align: middle;
-    padding-top: 4%;
+    padding-top: 1%;
+    
     
     
 }
@@ -335,7 +379,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    ;
     gap :5rem;
     inset-inline: 0;
     padding-left: 15%;
@@ -344,6 +388,7 @@ nav{
     
 }
 .title{
+
     flex: 0%;
     padding-top: 8%;
     font-weight: bold;
@@ -351,10 +396,10 @@ nav{
 }
 
 h1{
+
     margin: 0%;
     align-items: center;
     font-weight: bold;
-    
 }
 
 p{
@@ -365,7 +410,6 @@ p{
 
     margin-top: 0px;
     line-height: 120%;
-
 }
 
 /*.menu{
@@ -429,26 +473,35 @@ background-color:#c4aeff; /* Green */
 
 
 
-@media(max-width:600px) {
+@media screen and (max-width:600px) {
 
     .section1{
         flex-wrap: wrap;
         font-size: small;
-        height: 50px;
+        overflow: hidden;
+        padding: 0px;
+        margin: 0px;
+    
+
     }
     .pic img{
     
         align-items: center;
-        height: 350px;
-        width: 350px;
-    
-        margin-right: 3%;
-        margin-bottom:8%;
+        height: 300px;
+        width: 300px;
+        padding-left: 0px;
+        padding-right: 50px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-right: 0%;
+        margin-bottom:0px;
     
 
     }
     .wrapper{
-        display: flex;
+        word-wrap: wrap;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     
 
     }
@@ -458,6 +511,7 @@ background-color:#c4aeff; /* Green */
     .title{
         margin-top: 0%;
         padding-top: 20%;
+        padding-bottom: 0px;
         margin-bottom: 0%;
     }
 
@@ -482,7 +536,8 @@ background-color:#c4aeff; /* Green */
 }
 
 .card1{
-     font-family: Arial, Helvetica, sans-serif;
+
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: bold;
     color: #00044b;
@@ -523,12 +578,12 @@ background-color:#c4aeff; /* Green */
 
 .skill-item{
 
-background-color:#e4bedd; /* Green */
+  background-color:#e4bedd; /* Green */
   border: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-wrap: wrap;
-  
+  overflow: hidden;
   
 
   
@@ -539,7 +594,7 @@ background-color:#e4bedd; /* Green */
   display: inline-block;
   font-size: 15px;
   margin: 30px;
-border-radius: 30px;
+  border-radius: 30px;
 
 
 color: #00044b;
@@ -577,7 +632,7 @@ padding-top: 8px;
    
 }
 
-@media(max-width:600px) {
+@media screen and (max-width:600px) {
     .skill-item
     
     {
@@ -585,23 +640,31 @@ padding-top: 8px;
       margin-left: auto;
       align-items: center;
       margin-right: 19%;
-      padding-left: 5%;
+      padding-left: 4%;
+      padding-right: 9%;
+      overflow: hidden;
 
     }
-    .cont2{
+    .card2{
        
-         margin-left: auto;
-      align-items: center;    
+         
+      align-items: center; 
+      padding-left: 130px;
+        
     }
     .card1{
         text-align: center;
-        padding-right:5%;
+        padding-left: 0%;
+        padding-right: 70px;
         padding-top: 10%;
         
     }
     .section3{
         display: flex;
 
+}
+.img{
+    padding:4%;
 }
 
 
@@ -612,100 +675,117 @@ padding-top: 8px;
     font-size: 20px;
     text-align: center;
     text-wrap: wrap;
-    padding-top: 5%;
-    padding-bottom: 9%;
+    padding-top: 6%;
+    padding-bottom: 6%;
     display: flex;
     
-    width: 80%;
+    width:80%;
     height:60%;
-    margin-left: 18.5%;
-    padding-right: 8%;
+    margin-left:0%; 
+    padding-right: 0%;
     overflow: hidden;
-    padding-left: 10px;
-    padding-right: 9px;
+    padding-left: 14%;
+    padding-right: 0%;
 
 }
 .girl img {
-    padding-left: 1%;
-    padding-bottom: 0px;
-     margin-right: 0%;
-     position: absolute;
-    margin-left: 4.5%;
+    padding:0px;
+    margin: 0px;
+    width: 100%;
+    margin: auto;
     overflow: hidden;
+    height: auto;
 
     
 }
 .top{
     text-align: center;
-    padding: 60px;
-    background-color: #c4aeff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    padding-left:45% ;
+    padding-right:10% ;
+    position: absolute;
+
     
 }
 
 .para1 p{
     font-size: 16px;
-    /*justify-content: left;*/
-    text-align:left;
+text-align: justify;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
-    text-size-adjust: 0;
+
     line-height: 30px;
 
     
-    padding-top: 5%;
-    padding-left: 6%;
-    padding-right: 4%;
-    padding-bottom: 15%;
+    padding-top: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 6%;
    overflow:hidden;
      
 
 
 }
 .para1{
-   box-shadow: 0px 0px 8px rgba(91, 91, 92, 0.938);
+   box-shadow: 0px 0px 8px rgba(167, 166, 166, 0.938);
      border-radius: 15px;
      background-blend-mode: cover;
     
-     width: 80%;
-     
+     width: 90%;
+    
 }
 
-.about1{
-    margin-left: 5%;
-}
 
-@media(max-width:600px) {
+
+@media screen and (max-width:600px) {
     .girl img{
-         padding-left: 0%;
-    padding-bottom: 0px;
-     margin-right: 5%;
-     position: none;
-    margin-left: 0%;
-    overflow: hidden;
-    padding-right: 5%;
-    height: 300px;
-    width: 170px;
-    padding-top: 200px;
+         flex-wrap: wrap;
+         padding-top: 0%;
+         padding-bottom: 2%;
+         height: 0%;
+         width:100%;
+
+
 
     }
-    
+
+    .top {
+
+        padding-top: 2%;
+        margin-top: 4%;
+        padding-bottom:0%;
+        padding-left: 45%;
+        font-size: 20px;
+    }
+
+
     .about{
     position: bolck;
-    margin-left: 0%;
+    margin: 0%;
     overflow: hidden;
-padding-left: 30%;
+     padding-top: 5%;
+     padding-left: 15%;
 
 
 }
 .page2{
     overflow: hidden;
-    margin-right: 3%;
+align-items: center;
+padding-top: 3%;
+padding-left: 0%;
+padding-right: 0%;
+text-align:justify
     
 }
-.para1{
-    padding-left: 4%;
-    padding-right: 3%;
-    text-align: justify;
+.para1 p{
+
+   /*  box-shadow: 0px 0px 8px rgba(149, 149, 151, 0.938);
+     border-radius: 15px;
+     background-blend-mode: cover;*/
+    padding: 8%;
+    text-align: center;
 }
 
 
@@ -727,7 +807,7 @@ padding-left: 30%;
 
     
 }
-@media(max-width:600px) {
+@media screen and (max-width:600px) {
     .about{
         align-items: center;
     }
@@ -820,7 +900,8 @@ padding-left: 30%;
     margin-bottom: 15px;
     justify-content: space-between;
 }
-@media(max-width:600px) {
+
+@media screen and (max-width:600px) {
     .acc{
         align-items: center;
         padding-right: 0;
@@ -839,15 +920,12 @@ padding-left: 30%;
     }
     .text{
     
-        width: 95%;
+        width: 90%;
         align-items: center;
         padding: auto;
          margin-right: 11%;
          background-color:#c4aeff; 
          text-align: center;
-         padding-left: 6px;
-         
-         
     }
     .panel {
         background-color:#c4aeff;
@@ -860,15 +938,32 @@ padding-left: 30%;
 }
 
 /*---bolg----*/
-.newpic img{
-    
-    padding-left: 40%;
+
+.top1{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+
+    padding-left:45% ;
+    padding-right:10% ;
     position: absolute;
     
 
+    
+}
+
+/*.newpic {
+
+   margin-left: 0%;
+   margin-right: 0%;
+
+   width: auto;
 
 }
+
 .newtext p{
+
      font-size: 16px;
     
     text-align: center;
@@ -877,7 +972,6 @@ padding-left: 30%;
     
     line-height: 30px;
 
-    
     padding-top: 0%;
     padding-left: 0%;
     padding-right: 0%;
@@ -897,16 +991,40 @@ padding-left: 30%;
     padding-top: 5%;
     overflow: hidden;
     width: 80%;
+
+}
+
+
+.top1 {
+
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    padding-left:45% ;
+    padding-right:10% ;
+    position: absolute;
+
     
 }
 
-@media(max-width:600px) 
-{
-   .top{
-    padding-top: 3%;
-    padding-bottom: 3%;
-   }
 
+   */ 
+    
+
+@media screen and (min-width: 600px){
+
+   .top1{
+
+        padding-top: 1%;
+        margin-top: 2%;
+        padding-bottom:0%;
+        padding-left: 45%;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+/*
   .blog{
 
     align-items: center;
@@ -945,7 +1063,8 @@ padding-left: 30%;
 }    
 
   
-}
+}*/
+
 
 /*footer--*/
 
@@ -1020,7 +1139,7 @@ h3{
     
 }
 
-@media(max-width:600px){
+@media screen and (max-width:600px) {
     .footermenu ,h2{
         align-items: center;
     
@@ -1094,7 +1213,7 @@ h3{
   border-radius: 5px;
   background-color: #fff;
   outline: none;
-  font-family: "poppins";
+  font-family: Arial, Helvetica, sans-serif;
   
   
 }
@@ -1157,7 +1276,7 @@ background:linear-gradient(#a09c9c #585252) ;
     
 }
 
-@media(max-width:600px) {
+@media screen and (max-width:600px) {
     
 
     .container {
@@ -1197,9 +1316,3 @@ width: auto;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
-
